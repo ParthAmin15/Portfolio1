@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.submit {
+    margin-top: 10px;
+}
+</style>
+<body>
+    <div class="contact-form">
+        <h2></h2>
+        <form class="form" action="/submit_contact" method="post">
+            <label for="first_name"> Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">email</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="services">Services</label>
+            <select id="services" name="services" required>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="tableau">tableau</option>
+                <option value="power bi">power bi</option>
+            </select>
+
+            <input class="submit" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
